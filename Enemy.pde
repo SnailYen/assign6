@@ -23,12 +23,20 @@ class Enemy{
 
 	boolean isCollideWithFighter()
 	{
+    if(this.x<=fighter.x+50 && this.x>=fighter.x-50 && this.y<=fighter.y+50 && this.y>=fighter.y-50){
+    return true;
+    }else{
 		return false;
+    }
 	}
 
 	boolean isOutOfBorder()
 	{
+  if(this.x>width){
+  return true;
+  }else{
 		return false;
+  }
 	}
 
 
